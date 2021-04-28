@@ -24,7 +24,10 @@ app.get('/api/whoami', (req, res)=>{
   let languageString = req.headers["accept-language"];
   let softwareString = req.headers["user-agent"];
 
-  res.json({ipaddress: ipaddressString, language: languageString, software: softwareString});
+  res.json({
+    ipaddress: ipaddressString, 
+    language: languageString, 
+    software: softwareString});
 });
 
 // your first API endpoint... 
